@@ -525,69 +525,12 @@
   .cta-strip p { font-size: 16px; color: rgba(255,255,255,0.6); margin-bottom: 36px; }
 
   /* ─── RESPONSIVE ─────────────────────────────────────────── */
-/* Desktop Menu */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 28px;
-    height: 3px;
-    background: #00d4ff;
-    margin: 4px 0;
-    transition: 0.3s;
-}
-
-/* Mobile */
 @media (max-width: 900px) {
-
-    .hamburger {
-        display: flex;
-        z-index: 10000;
-    }
-
-    .nav-links {
-        display: none;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: rgba(5,11,24,0.98);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        z-index: 9999;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
-    }
-
-    .nav-links a {
-        font-size: 22px;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .cta-button {
-        display: none;
-    }
-}
+    nav { padding: 0 20px; }
+    .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(5,11,24,0.98); flex-direction: column; align-items: center; justify-content: center; gap: 36px; z-index: 999; }
+    .nav-links.open { display: flex; }
+    .nav-links a { font-size: 18px; }
+    .hamburger { display: flex; z-index: 1001; }
     .about-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr 1fr; }
     .portfolio-grid { grid-template-columns: 1fr; }
@@ -633,7 +576,7 @@
       <div class="nav-brand-sub">AI Digital Solutions</div>
     </div>
   </a>
-  <ul class="nav-links" id="navLinks" style="display:none;">
+  <ul class="nav-links" id="navLinks"
     <li><a href="#home" onclick="showPage('home');closeMenu()" class="active">Home</a></li>
     <li><a href="#about" onclick="showPage('about');closeMenu()">About</a></li>
     <li><a href="#services" onclick="showPage('services');closeMenu()">Services</a></li>
