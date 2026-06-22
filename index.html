@@ -525,12 +525,36 @@
   .cta-strip p { font-size: 16px; color: rgba(255,255,255,0.6); margin-bottom: 36px; }
 
   /* ─── RESPONSIVE ─────────────────────────────────────────── */
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
     nav { padding: 0 20px; }
-    .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(5,11,24,0.98); flex-direction: column; align-items: center; justify-content: center; gap: 36px; z-index: 999; }
-    .nav-links.open { display: flex; }
-    .nav-links a { font-size: 18px; }
-    .hamburger { display: flex; z-index: 1001; }
+    .nav-links {
+      display: none !important;
+      position: fixed !important;
+      top: 0 !important; left: 0 !important;
+      right: 0 !important; bottom: 0 !important;
+      width: 100vw !important; height: 100vh !important;
+      background: rgba(5,11,24,0.99) !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 24px !important;
+      z-index: 9998 !important;
+      padding-top: 0 !important;
+      margin: 0 !important;
+      list-style: none !important;
+    }
+    .nav-links.open { display: flex !important; }
+    .nav-links li { width: 100%; text-align: center; }
+    .nav-links a {
+      font-size: 22px !important;
+      color: white !important;
+      display: block;
+      padding: 12px 0;
+    }
+    .hamburger { display: flex; z-index: 9999; position: relative; }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
     .about-grid { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr 1fr; }
     .portfolio-grid { grid-template-columns: 1fr; }
@@ -576,7 +600,7 @@
       <div class="nav-brand-sub">AI Digital Solutions</div>
     </div>
   </a>
-  <ul class="nav-links" id="navLinks">
+  <ul class="nav-links" id="navLinks" style="display:none;">
     <li><a href="#home" onclick="showPage('home');closeMenu()" class="active">Home</a></li>
     <li><a href="#about" onclick="showPage('about');closeMenu()">About</a></li>
     <li><a href="#services" onclick="showPage('services');closeMenu()">Services</a></li>
