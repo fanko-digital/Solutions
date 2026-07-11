@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME PAGE -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://fanko-digital.github.io/Solutions/fanko_logo.jpeg</image:loc>
+      <image:title>FanKO AI Digital Solutions</image:title>
+    </image:image>
+  </url>
+
+  <!-- ABOUT PAGE -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/#about</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SERVICES PAGE -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/#services</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- PORTFOLIO PAGE -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/#portfolio</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG PAGE -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/#blog</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG POST: Best Digital Marketing Agency Kanyakumari 2026 -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/#blogpost1</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- CONTACT PAGE -->
+  <url>
+    <loc>https://www.fankodigitalsolution.in/#contact</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

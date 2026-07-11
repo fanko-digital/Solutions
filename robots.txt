@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.fankodigitalsolution.in/sitemap.xml
+
+# Block unnecessary files
+Disallow: /cdn-cgi/
