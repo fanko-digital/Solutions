@@ -1,0 +1,6 @@
+{
+  "name": "FanKO AI Digital Solutions",
+  "description": "FanKO AI Digital Solutions - AI-powered digital marketing agency website featuring services in SEO, website development, Meta ads, and branding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
