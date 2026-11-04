@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PageRoute } from './types';
 import { BackgroundCanvas } from './components/BackgroundCanvas';
+import { Loader } from './components/Loader';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { WhatsAppFloatingButton } from './components/WhatsAppFloatingButton';
@@ -17,14 +18,6 @@ export const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageRoute>('home');
   const [activeBlogSlug, setActiveBlogSlug] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-
-  // Initial loader effect matching original loader
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1200);
-    return () => clearTimeout(timer);
-  }, []);
 
   // Listen to browser popstate for back/forward navigation
   useEffect(() => {
@@ -81,15 +74,7 @@ export const App: React.FC = () => {
   return (
     <div className="relative min-h-screen">
       {/* Intro Cyber Loader */}
-      {isLoading && (
-        <div id="loader" style={{ opacity: 1, pointerEvents: 'none' }}>
-          <img className="logo" src="/fanko_logo-Bg.png" alt="FanKO AI Digital Solutions" />
-          <div className="lbar">
-            <div className="lfill"></div>
-          </div>
-          <p className="ltxt">INITIALIZING AI ENGINE</p>
-        </div>
-      )}
+      {isLoading && <Loader onComplete={() => setIsLoading(false)} duration={1400} />}
 
       {/* Background Interactive Particle Canvas */}
       <BackgroundCanvas />
