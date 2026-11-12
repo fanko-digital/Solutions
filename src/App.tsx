@@ -19,10 +19,18 @@ export const App: React.FC = () => {
   const [activeBlogSlug, setActiveBlogSlug] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Listen to browser popstate for back/forward navigation
+  // Listen to browser popstate and hashchange for back/forward navigation and refresh
   useEffect(() => {
     const handleLocationChange = () => {
-      const path = window.location.pathname.replace(/\/$/, '') || '/';
+      let path = window.location.pathname.replace(/\/$/, '') || '/';
+      // If path is root but hash is provided (e.g. /#portfolio or /#/portfolio), support it
+      if ((path === '/' || path === '') && window.location.hash) {
+        const hashClean = window.location.hash.replace(/^#\/?/, '').replace(/\/$/, '');
+        if (hashClean) {
+          path = `/${hashClean}`;
+        }
+      }
+
       if (path === '/about') {
         setCurrentPage('about');
       } else if (path === '/services') {
@@ -50,7 +58,11 @@ export const App: React.FC = () => {
 
     handleLocationChange();
     window.addEventListener('popstate', handleLocationChange);
-    return () => window.removeEventListener('popstate', handleLocationChange);
+    window.addEventListener('hashchange', handleLocationChange);
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      window.removeEventListener('hashchange', handleLocationChange);
+    };
   }, []);
 
   const navigateTo = (page: PageRoute, slug?: string) => {
