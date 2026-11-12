@@ -67,6 +67,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <button onClick={() => onNavigate('services')}>App Development</button>
             </li>
             <li>
+              <button onClick={() => onNavigate('services')}>Custom Software</button>
+            </li>
+            <li>
+              <button onClick={() => onNavigate('services')}>AI Automation</button>
+            </li>
+            <li>
               <button onClick={() => onNavigate('services')}>Email Marketing</button>
             </li>
             <li>

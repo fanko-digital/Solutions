@@ -52,12 +52,25 @@ export const PROCESS_STEPS = [
   },
 ];
 
+import seoImg from '../assets/images/service_seo_1787905118620.jpg';
+import googleAdsImg from '../assets/images/service_google_ads_1787905441219.jpg';
+import webDevImg from '../assets/images/service_web_dev_1787905151259.jpg';
+import appDevImg from '../assets/images/service_app_dev_1787906259688.jpg';
+import emailMarketingImg from '../assets/images/service_email_marketing_1787906274006.jpg';
+import gbpImg from '../assets/images/service_gbp_1787905188273.jpg';
+import socialMediaImg from '../assets/images/service_social_media_1787905202796.jpg';
+import metaAdsImg from '../assets/images/service_meta_ads_1787905218236.jpg';
+import aiVideoImg from '../assets/images/service_ai_video_1787905233095.jpg';
+import brandingImg from '../assets/images/service_branding_1787905250105.jpg';
+import customSoftwareImg from '../assets/images/service_custom_software_1794468510429.jpg';
+import aiAutomationImg from '../assets/images/service_ai_automation_1794468511566.jpg';
+
 export const SERVICES: ServiceItem[] = [
   {
     id: 'seo',
     slug: 'seo-services',
     title: 'SEO Services',
-    image: '/src/assets/images/service_seo_1787905118620.jpg',
+    image: seoImg,
     description:
       'Dominate search rankings with advanced SEO strategies — on-page, off-page, technical SEO, and AI-driven keyword research that drives organic traffic.',
     tags: ['Technical SEO', 'Keyword Research', 'On-Page', 'Backlinks'],
@@ -66,7 +79,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'google-ads',
     slug: 'google-ads',
     title: 'Google Ads',
-    image: '/src/assets/images/service_google_ads_1787905441219.jpg',
+    image: googleAdsImg,
     description:
       'Maximize your ROI with high-intent Google Search, Display, and Performance Max PPC campaigns powered by AI bid automation and keyword targeting.',
     tags: ['Search PPC', 'Performance Max', 'AI Bidding', 'Retargeting'],
@@ -75,7 +88,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'web-dev',
     slug: 'website-development',
     title: 'Website Development',
-    image: '/src/assets/images/service_web_dev_1787905151259.jpg',
+    image: webDevImg,
     description:
       'Stunning, fast-loading websites built with modern tech — responsive, SEO-optimized, and designed to convert visitors into paying customers.',
     tags: ['Custom Design', 'Speed Optimization', 'SEO Architecture', 'Mobile-First'],
@@ -84,16 +97,34 @@ export const SERVICES: ServiceItem[] = [
     id: 'app-dev',
     slug: 'app-development',
     title: 'App Development',
-    image: '/src/assets/images/service_app_dev_1787906259688.jpg',
+    image: appDevImg,
     description:
       'High-performance native and cross-platform mobile apps for iOS and Android — feature-packed, intuitive UI/UX, and engineered for seamless scalability.',
     tags: ['iOS & Android', 'Cross-Platform', 'Intuitive UX', 'Scalable Backend'],
   },
   {
+    id: 'custom-software',
+    slug: 'custom-software',
+    title: 'Custom Software',
+    image: customSoftwareImg,
+    description:
+      'Tailored, mission-critical custom software and web applications built to match your exact business requirements, automate operations, and scale without limits.',
+    tags: ['Custom ERP/CRM', 'Enterprise Systems', 'API Integrations', 'Cloud Architecture'],
+  },
+  {
+    id: 'ai-automation',
+    slug: 'ai-automation',
+    title: 'AI Automation',
+    image: aiAutomationImg,
+    description:
+      'End-to-end intelligent business automation — covering automated customer replies, Instagram DM automation, WhatsApp chatbots, lead collection, appointment booking, and automated follow-ups.',
+    tags: ['WhatsApp Chatbots', 'Instagram DM Automation', 'Lead Collection', 'Appointment Booking', 'Automated Follow-ups'],
+  },
+  {
     id: 'email-marketing',
     slug: 'email-marketing',
     title: 'Email Marketing',
-    image: '/src/assets/images/service_email_marketing_1787906274006.jpg',
+    image: emailMarketingImg,
     description:
       'Automated high-converting email sequences, personalized newsletters, and intelligent customer segmentation that boost customer retention and repeat sales.',
     tags: ['Automated Drip', 'Segmentation', 'Newsletter Funnels', 'High Open-Rates'],
@@ -102,7 +133,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'gbp',
     slug: 'google-business-profile',
     title: 'Google Business Profile',
-    image: '/src/assets/images/service_gbp_1787905188273.jpg',
+    image: gbpImg,
     description:
       'Optimize your Google Business Profile to rank in the local 3-pack, attract foot traffic, and generate consistent calls and direction requests.',
     tags: ['Local 3-Pack', 'Reviews Strategy', 'Map Citations', 'Call Lead Gen'],
@@ -111,7 +142,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'social-media',
     slug: 'social-media-marketing',
     title: 'Social Media Marketing',
-    image: '/src/assets/images/service_social_media_1787905202796.jpg',
+    image: socialMediaImg,
     description:
       'Build a magnetic brand presence across Instagram, Facebook and more with creative content strategies, reels, and engagement campaigns that grow your audience.',
     tags: ['Instagram Growth', 'Viral Reels', 'Community Building', 'Brand Voice'],
@@ -120,7 +151,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'meta-ads',
     slug: 'meta-ads',
     title: 'Meta Ads',
-    image: '/src/assets/images/service_meta_ads_1787905218236.jpg',
+    image: metaAdsImg,
     description:
       'Precision-targeted Facebook and Instagram ad campaigns that reach your ideal customers with compelling creatives and ROAS-focused bidding strategies.',
     tags: ['Hyper-Targeting', 'Ad Creatives', 'ROAS Optimization', 'Lead Generation'],
@@ -129,7 +160,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'ai-video',
     slug: 'ai-video-creation',
     title: 'AI Video Creation',
-    image: '/src/assets/images/service_ai_video_1787905233095.jpg',
+    image: aiVideoImg,
     description:
       'Engage your audience with AI-generated video content — product showcases, brand stories, and social media reels that captivate and convert.',
     tags: ['AI Commercials', 'Product Visuals', 'Vertical Reels', 'High Engagement'],
@@ -138,7 +169,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'branding',
     slug: 'branding-graphic-design',
     title: 'Branding & Graphic Design',
-    image: '/src/assets/images/service_branding_1787905250105.jpg',
+    image: brandingImg,
     description:
       'Build a brand identity that stands out — from logo design and brand guidelines to marketing collateral that communicates your unique value proposition.',
     tags: ['Identity Systems', 'Logo Design', 'Marketing Collateral', 'Typography & Palette'],
